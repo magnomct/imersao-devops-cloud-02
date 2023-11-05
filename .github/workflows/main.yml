@@ -40,7 +40,7 @@ jobs:
     - name: Configurar o KubeConfig
       run: aws eks update-kubeconfig --name imersao-eks --region us-east-1
     - name: Deploy to Kubernetes cluster
-      uses: Azure/k8s-deploy@4.9
+      uses: Azure/k8s-deploy@v4.9
       with:
         manifests:
           ./kube-news/k8s/deployment.yaml
